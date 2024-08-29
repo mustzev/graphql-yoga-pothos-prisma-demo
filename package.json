@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "@types/node": "^22.5.1",
+    "eslint": "^9.9.1",
+    "globals": "^15.9.0",
+    "prisma": "^5.19.0",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.2.0"
+  },
+  "name": "graphql-yoga-pothos-prisma-demo",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rmdir dist /s /q && npx tsc && npx prisma generate",
+    "start": "set NODE_PATH=dist&&node dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@pothos/core": "^4.2.0",
+    "@pothos/plugin-prisma": "^4.2.1",
+    "graphql": "^16.9.0",
+    "graphql-yoga": "^5.7.0"
+  }
+}
