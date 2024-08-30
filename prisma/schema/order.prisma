@@ -1,0 +1,10 @@
+model Order {
+    id            Int      @id @default(autoincrement())
+    orderId       Int
+    userId        Int
+    productId     Int
+    orderPrice    Float
+    orderQuantity Int
+    createdAt     DateTime @default(now())
+    updatedAt     DateTime @updatedAt
+}
