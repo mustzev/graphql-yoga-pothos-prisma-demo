@@ -2,6 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.schema = void 0;
 const builder_1 = require("./builder");
+require("./product/create");
+require("./product/products");
+require("./product/type");
 require("./user/create");
 require("./user/type");
 require("./user/users");

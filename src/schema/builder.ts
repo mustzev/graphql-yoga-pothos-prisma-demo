@@ -14,6 +14,7 @@ export const builder = new SchemaBuilder<{
         }
     }
     PrismaTypes: PrismaTypes
+    
 }>({
     plugins: [PrismaPlugin],
     prisma: {

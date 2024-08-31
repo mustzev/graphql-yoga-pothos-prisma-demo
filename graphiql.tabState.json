@@ -1,0 +1,45 @@
+{
+    "tabs": [
+        {
+            "id": "88f55e9f-3474-a720-3c51-fe1ca682e621",
+            "hash": null,
+            "title": "AddUser",
+            "query": "mutation AddUser($createUserInput: createUserInput!) {\n  createUser(createUserInput: $createUserInput) {\n    id\n    email\n    name\n  }\n}",
+            "variables": "{\n  \"createUserInput\": {\n    \"email\": \"user_two@email.com\",\n    \"name\": \"user_two\"\n  }\n}",
+            "headers": "",
+            "operationName": "AddUser",
+            "response": null
+        },
+        {
+            "id": "1536b781-712a-696b-a441-b410eb12722c",
+            "hash": null,
+            "title": "Users",
+            "query": "query Users {\n  users {\n    email\n    id\n    name\n  }\n}",
+            "variables": "",
+            "headers": null,
+            "operationName": "Users",
+            "response": null
+        },
+        {
+            "id": "97ae8616-5714-38da-f6bf-005d6133a97e",
+            "hash": null,
+            "title": "AddProduct",
+            "query": "mutation AddProduct($createProductInput: createProductInput!) {\n  createProduct(createProductInput: $createProductInput) {\n    code\n    createdAt\n    description\n    id\n    name\n    price\n  }\n}",
+            "variables": "{\n  \"createProductInput\": {\n    \"code\": \"0002\",\n    \"description\": \"Product 0002\",\n    \"name\": \"Frying pan\",\n    \"price\": 20000,\n    \"quantity\": 10\n  }\n}",
+            "headers": null,
+            "operationName": "AddProduct",
+            "response": null
+        },
+        {
+            "id": "c7462c69-4188-b8ec-62da-fe609420f0e6",
+            "hash": null,
+            "title": "Products",
+            "query": "query Products {\n  products {\n    code\n    createdAt\n    description\n    id\n    name\n    price\n    quantity\n  }\n}",
+            "variables": "",
+            "headers": "",
+            "operationName": "Products",
+            "response": null
+        }
+    ],
+    "activeTabIndex": 3
+}
