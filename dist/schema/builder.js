@@ -21,9 +21,3 @@ exports.builder = new core_1.default({
     }
 });
 exports.builder.addScalarType('Date', graphql_scalars_1.DateResolver, {});
-exports.builder.queryType({});
-exports.builder.mutationType({});
-// builder.subscriptionType({})
-exports.builder.queryField('root', t => t.string({
-    resolve: () => 'Root query placeholder'
-}));

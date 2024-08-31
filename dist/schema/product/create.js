@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const builder_1 = require("schema/builder");
-const createProductInput = builder_1.builder.inputType('createProductInput', {
+const CreateProductInput = builder_1.builder.inputType('CreateProductInput', {
     fields: t => ({
         code: t.string({ required: true }),
         name: t.string({ required: true }),
@@ -14,7 +14,7 @@ builder_1.builder.mutationField('createProduct', t => t.prismaField({
     type: 'Product',
     args: {
         createProductInput: t.arg({
-            type: createProductInput,
+            type: CreateProductInput,
             required: true
         })
     },

@@ -14,7 +14,7 @@ export const builder = new SchemaBuilder<{
         }
     }
     PrismaTypes: PrismaTypes
-    
+
 }>({
     plugins: [PrismaPlugin],
     prisma: {
@@ -28,11 +28,3 @@ export const builder = new SchemaBuilder<{
 })
 
 builder.addScalarType('Date', DateResolver, {})
-
-builder.queryType({})
-builder.mutationType({})
-// builder.subscriptionType({})
-
-builder.queryField('root', t => t.string({
-    resolve: () => 'Root query placeholder'
-}))

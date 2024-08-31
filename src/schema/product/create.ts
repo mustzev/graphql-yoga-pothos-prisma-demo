@@ -1,6 +1,6 @@
 import { builder, prisma } from 'schema/builder'
 
-const createProductInput = builder.inputType('createProductInput', {
+const CreateProductInput = builder.inputType('CreateProductInput', {
     fields: t => ({
         code: t.string({ required: true }),
         name: t.string({ required: true }),
@@ -14,7 +14,7 @@ builder.mutationField('createProduct', t => t.prismaField({
     type: 'Product',
     args: {
         createProductInput: t.arg({
-            type: createProductInput,
+            type: CreateProductInput,
             required: true
         })
     },

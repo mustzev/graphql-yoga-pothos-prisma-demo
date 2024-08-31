@@ -4,7 +4,7 @@
             "id": "88f55e9f-3474-a720-3c51-fe1ca682e621",
             "hash": null,
             "title": "AddUser",
-            "query": "mutation AddUser($createUserInput: createUserInput!) {\n  createUser(createUserInput: $createUserInput) {\n    id\n    email\n    name\n  }\n}",
+            "query": "mutation AddUser($createUserInput: CreateUserInput!) {\n  createUser(createUserInput: $createUserInput) {\n    id\n    email\n    name\n  }\n}",
             "variables": "{\n  \"createUserInput\": {\n    \"email\": \"user_two@email.com\",\n    \"name\": \"user_two\"\n  }\n}",
             "headers": "",
             "operationName": "AddUser",
@@ -24,7 +24,7 @@
             "id": "97ae8616-5714-38da-f6bf-005d6133a97e",
             "hash": null,
             "title": "AddProduct",
-            "query": "mutation AddProduct($createProductInput: createProductInput!) {\n  createProduct(createProductInput: $createProductInput) {\n    code\n    createdAt\n    description\n    id\n    name\n    price\n  }\n}",
+            "query": "mutation AddProduct($createProductInput: CreateProductInput!) {\n  createProduct(createProductInput: $createProductInput) {\n    code\n    createdAt\n    description\n    id\n    name\n    price\n  }\n}",
             "variables": "{\n  \"createProductInput\": {\n    \"code\": \"0002\",\n    \"description\": \"Product 0002\",\n    \"name\": \"Frying pan\",\n    \"price\": 20000,\n    \"quantity\": 10\n  }\n}",
             "headers": null,
             "operationName": "AddProduct",
@@ -39,7 +39,17 @@
             "headers": "",
             "operationName": "Products",
             "response": null
+        },
+        {
+            "id": "bd9d378c-9106-5956-987c-03f138e0d2e7",
+            "hash": null,
+            "title": "Stats",
+            "query": "query Stats {\n  stats {\n    count {\n      productCount\n      userCount\n    }\n  }\n}",
+            "variables": null,
+            "headers": null,
+            "operationName": "Stats",
+            "response": null
         }
     ],
-    "activeTabIndex": 3
+    "activeTabIndex": 4
 }
