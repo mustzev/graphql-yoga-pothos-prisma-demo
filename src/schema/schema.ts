@@ -8,9 +8,8 @@ import './user/create'
 import './user/type'
 import './user/users'
 
-import './stats/count/type'
+import './stats/count/count'
 import './stats/stats'
-import './stats/type'
 
 builder.queryType({})
 builder.mutationType({})
