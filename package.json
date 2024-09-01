@@ -13,9 +13,9 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -r dist && npx tsc && npx prisma generate",
+    "build": "rm -r dist && npx prisma generate && npx tsc",
     "start": "NODE_PATH=dist node dist/index.js",
-    "build-windows": "rmdir dist /s /q && npx tsc && npx prisma generate",
+    "build-windows": "rmdir dist /s /q && npx prisma generate && npx tsc",
     "start-windows": "set NODE_PATH=dist&&node dist/index.js"
   },
   "author": "",
