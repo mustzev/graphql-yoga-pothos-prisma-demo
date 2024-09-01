@@ -13,8 +13,10 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rmdir dist /s /q && npx tsc && npx prisma generate",
-    "start": "set NODE_PATH=dist&&node dist/index.js"
+    "build": "rm -r dist && npx tsc && npx prisma generate",
+    "start": "NODE_PATH=dist node dist/index.js",
+    "build-windows": "rmdir dist /s /q && npx tsc && npx prisma generate",
+    "start-windows": "set NODE_PATH=dist&&node dist/index.js"
   },
   "author": "",
   "license": "ISC",
